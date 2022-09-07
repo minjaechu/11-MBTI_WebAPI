@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Your MBTI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>MBTI test</h1>
+                <form action="/mbti" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" name="age">
+                    </div>
+                    <div class="form-group">
+                        <label for="q1">1. What type of peaple do you prefer?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1-1" value="E">
+                            <label class="form-check-label" for="q1-1">
+                                I prefer Extroversive people.
+                            </label>
+                        </div>]
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1-2" value="I">
+                            <label class="form-check-label" for="q1-2">
+                                I prefer Introversive people.
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    </style>
+    
+</body>
+</html>
